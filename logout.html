@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow | Logout</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body data-page="logout">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">TF</div>
+        <div>
+          <h1>TaskFlow</h1>
+          <p>Encerrar sessão de forma segura</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/" data-nav>Início</a>
+        <a href="/login.html?force=1" data-nav>Login</a>
+      </nav>
+    </header>
+
+    <div class="login-grid">
+      <section class="auth-panel">
+        <span class="eyebrow">Logout</span>
+        <h2>Deseja sair da sessão agora?</h2>
+        <p id="logout-message" class="footer-note">
+          Ao confirmar, o servidor encerra a sessão e você volta para a tela de login.
+        </p>
+        <div class="form-actions">
+          <button id="confirm-logout" class="button primary" type="button">Sair agora</button>
+          <a class="button" href="/dashboard.html" data-nav>Cancelar</a>
+        </div>
+      </section>
+      <section class="feature-card">
+        <h4>Boas práticas</h4>
+        <p>
+          O logout limpa o cookie de sessão, reduzindo acesso indevido quando outra pessoa usa o mesmo navegador.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

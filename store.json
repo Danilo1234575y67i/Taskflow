@@ -1,0 +1,152 @@
+{
+  "teams": [
+    {
+      "id": "3bfae020-9d9c-4808-85d1-537116ffbfae",
+      "name": "Banco de dados",
+      "description": "Objetivo criar um banco de dados para uma de esporte cujo o nosso objetivo  separa as categorias de roupas , calça , sapatos e chuteiras.",
+      "createdAt": "2026-07-04T14:33:19.632Z"
+    },
+    {
+      "id": "5f4bbd27-8e5e-4ae6-8ecd-177792435c46",
+      "name": "QA",
+      "description": "Equipe de testes",
+      "createdAt": "2026-07-04T14:10:58.594Z"
+    },
+    {
+      "id": "41171464-2905-4309-b96a-36b81f01751f",
+      "name": "Alpha",
+      "description": "Equipe principal de produto.",
+      "createdAt": "2026-07-04T14:10:35.805Z"
+    },
+    {
+      "id": "5040513f-608d-4a79-97a7-529e4e0b0fb2",
+      "name": "Design",
+      "description": "Equipe de interface e experiência.",
+      "createdAt": "2026-07-04T14:10:35.805Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+      "name": "Ana Admin",
+      "email": "admin@taskflow.local",
+      "password": "123456",
+      "role": "Admin",
+      "teamId": "41171464-2905-4309-b96a-36b81f01751f",
+      "createdAt": "2026-07-04T14:10:35.805Z"
+    },
+    {
+      "id": "0d0b1ff9-4bac-48bd-b4ad-da8990b14c3d",
+      "name": "Bruno Member",
+      "email": "member@taskflow.local",
+      "password": "123456",
+      "role": "Membro",
+      "teamId": "41171464-2905-4309-b96a-36b81f01751f",
+      "createdAt": "2026-07-04T14:10:35.805Z"
+    },
+    {
+      "id": "93d25247-cce9-43fd-a84b-9129f1983ff8",
+      "name": "Carla Design",
+      "email": "design@taskflow.local",
+      "password": "123456",
+      "role": "Membro",
+      "teamId": "5040513f-608d-4a79-97a7-529e4e0b0fb2",
+      "createdAt": "2026-07-04T14:10:35.805Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "f648642f-0287-44f4-9e1c-5a7d5a7c7238",
+      "title": "Validar fluxo novo",
+      "description": "Checar dashboard, login e logout",
+      "teamId": "41171464-2905-4309-b96a-36b81f01751f",
+      "ownerId": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+      "assigneeIds": [
+        "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8"
+      ],
+      "deadline": "2026-07-05T00:00:00.000Z",
+      "status": "To Do",
+      "createdBy": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+      "createdAt": "2026-07-04T14:10:58.650Z",
+      "updatedAt": "2026-07-04T14:10:58.650Z",
+      "history": [
+        {
+          "at": "2026-07-04T14:10:58.650Z",
+          "action": "created",
+          "byUserId": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+          "note": "Tarefa criada via painel."
+        }
+      ]
+    },
+    {
+      "id": "dd8d9fe8-cd40-4c39-9ed0-e024ab95fa57",
+      "title": "Ajustar fluxo de login",
+      "description": "Validar sessão, redirect e logout funcional.",
+      "teamId": "41171464-2905-4309-b96a-36b81f01751f",
+      "ownerId": "0d0b1ff9-4bac-48bd-b4ad-da8990b14c3d",
+      "assigneeIds": [
+        "0d0b1ff9-4bac-48bd-b4ad-da8990b14c3d"
+      ],
+      "deadline": "2026-07-06T14:10:35.814Z",
+      "status": "Doing",
+      "createdBy": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+      "createdAt": "2026-07-04T14:10:35.805Z",
+      "updatedAt": "2026-07-04T14:10:35.805Z",
+      "history": [
+        {
+          "at": "2026-07-04T14:10:35.805Z",
+          "action": "created",
+          "byUserId": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+          "note": "Tarefa criada no setup inicial."
+        }
+      ]
+    },
+    {
+      "id": "e891accf-79f6-448d-ab31-f08818319bb6",
+      "title": "Montar cards do dashboard",
+      "description": "Criar visão gerencial com filtros e resumo.",
+      "teamId": "41171464-2905-4309-b96a-36b81f01751f",
+      "ownerId": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+      "assigneeIds": [
+        "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+        "0d0b1ff9-4bac-48bd-b4ad-da8990b14c3d"
+      ],
+      "deadline": "2026-07-09T14:10:35.814Z",
+      "status": "To Do",
+      "createdBy": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+      "createdAt": "2026-07-04T14:10:35.805Z",
+      "updatedAt": "2026-07-04T14:10:35.805Z",
+      "history": [
+        {
+          "at": "2026-07-04T14:10:35.805Z",
+          "action": "created",
+          "byUserId": "e662afd3-c12e-4526-bfc7-0a7a4a1b1ee8",
+          "note": "Tarefa criada no setup inicial."
+        }
+      ]
+    },
+    {
+      "id": "0c23b547-5123-44e1-9801-677c2f35cc14",
+      "title": "Padronizar notificações",
+      "description": "Avisar sobre mudanças relevantes e prazos.",
+      "teamId": "5040513f-608d-4a79-97a7-529e4e0b0fb2",
+      "ownerId": "93d25247-cce9-43fd-a84b-9129f1983ff8",
+      "assigneeIds": [
+        "93d25247-cce9-43fd-a84b-9129f1983ff8"
+      ],
+      "deadline": "2026-07-05T14:10:35.814Z",
+      "status": "To Do",
+      "createdBy": "93d25247-cce9-43fd-a84b-9129f1983ff8",
+      "createdAt": "2026-07-04T14:10:35.805Z",
+      "updatedAt": "2026-07-04T14:10:35.805Z",
+      "history": [
+        {
+          "at": "2026-07-04T14:10:35.805Z",
+          "action": "created",
+          "byUserId": "93d25247-cce9-43fd-a84b-9129f1983ff8",
+          "note": "Tarefa criada no setup inicial."
+        }
+      ]
+    }
+  ]
+}

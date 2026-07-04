@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow | Equipes</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body data-page="teams" data-requires-auth="true" data-admin-only="true">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">TF</div>
+        <div>
+          <h1>TaskFlow</h1>
+          <p>Times, papéis e controle de acesso</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/" data-nav>Início</a>
+        <a href="/equipes.html" data-nav>Equipes</a>
+        <a href="/tarefas.html" data-nav>Tarefas</a>
+        <a href="/dashboard.html" data-nav>Dashboard</a>
+        <a href="/notificacoes.html" data-nav>Notificações</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Usuários e times</span>
+      <h2>Identidade clara para impedir acesso indevido.</h2>
+      <p>
+        O modelo da plataforma parte de duas regras fortes: ninguém entra sem time e ninguém opera sem papel definido.
+        Isso ajuda a manter responsabilidade e trilha de auditoria.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="/tarefas.html" data-nav>Ir para tarefas</a>
+        <a class="button" href="/dashboard.html" data-nav>Ver painel</a>
+      </div>
+    </section>
+
+    <div class="content-grid">
+      <article class="panel span-6">
+        <h3>Regras de acesso</h3>
+        <ul>
+          <li>Não existe conta duplicada.</li>
+          <li>O usuário só acessa o que pertence ao seu time.</li>
+          <li>Logout precisa encerrar sessão de forma real.</li>
+          <li>Perfis devem ser atribuídos corretamente entre Admin e Membro.</li>
+        </ul>
+      </article>
+      <article class="panel span-6">
+        <h3>Estrutura de equipe</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Admin</strong>
+            <div>
+              Gerencia usuários, vê o panorama geral e controla a operação.
+              <div class="status"><span class="dot"></span>Permissão ampliada</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <strong>Membro</strong>
+            <div>
+              Atua em tarefas do próprio time e acompanha prazos e atualizações.
+              <div class="status"><span class="dot warn"></span>Escopo restrito</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

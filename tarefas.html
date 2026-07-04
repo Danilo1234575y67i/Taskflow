@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow | Tarefas</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body data-page="tasks" data-requires-auth="true">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">TF</div>
+        <div>
+          <h1>TaskFlow</h1>
+          <p>Controle de tarefas com histórico e prazo</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/" data-nav>Início</a>
+        <a href="/equipes.html" data-nav>Equipes</a>
+        <a href="/tarefas.html" data-nav>Tarefas</a>
+        <a href="/dashboard.html" data-nav>Dashboard</a>
+        <a href="/notificacoes.html" data-nav>Notificações</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Ciclo de trabalho</span>
+      <h2>To Do, Doing e Done sem espaço para status livres.</h2>
+      <p>
+        Cada tarefa exige dados completos, dono definido, responsáveis claros e histórico de mudanças.
+        O fluxo fica previsível e fácil de acompanhar.
+      </p>
+    </section>
+
+    <div class="content-grid">
+      <article class="panel span-12">
+        <div class="section-title">
+          <h3>Adicionar tarefa</h3>
+          <span>Admin e membro podem registrar uma nova tarefa</span>
+        </div>
+        <form id="task-form" class="stack form-card">
+          <div class="field">
+            <label for="task-title">Título</label>
+            <input id="task-title" name="title" type="text" required placeholder="Ex.: Revisar proposta" />
+          </div>
+          <div class="field">
+            <label for="task-description">Descrição</label>
+            <textarea id="task-description" name="description" rows="3" required placeholder="Descreva a atividade"></textarea>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="task-responsible">Responsável</label>
+              <input id="task-responsible" name="responsible" type="text" required placeholder="Nome do responsável" />
+            </div>
+            <div class="field">
+              <label for="task-dueDate">Prazo</label>
+              <input id="task-dueDate" name="dueDate" type="date" required />
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Adicionar tarefa</button>
+          </div>
+        </form>
+        <div id="task-message" class="message-line"></div>
+        <div id="task-list" class="item-list"></div>
+      </article>
+
+      <article class="panel span-4">
+        <h3>Estrutura mínima</h3>
+        <ul>
+          <li>Título, descrição e responsável.</li>
+          <li>Prazo obrigatório.</li>
+          <li>Visibilidade por time.</li>
+          <li>Sem criação incompleta.</li>
+        </ul>
+      </article>
+      <article class="panel span-4">
+        <h3>Atribuição múltipla</h3>
+        <ul>
+          <li>Uma tarefa pode ter vários responsáveis.</li>
+          <li>O sistema registra toda troca de dono.</li>
+          <li>O histórico evita perda de contexto.</li>
+          <li>A gestão acompanha mudanças com clareza.</li>
+        </ul>
+      </article>
+      <article class="panel span-4">
+        <h3>Prazo e atraso</h3>
+        <ul>
+          <li>Alertas automáticos antes do vencimento.</li>
+          <li>Indicador claro quando a tarefa atrasa.</li>
+          <li>Sem prazo, a entrega perde valor operacional.</li>
+          <li>Alertas mantêm o time informado.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

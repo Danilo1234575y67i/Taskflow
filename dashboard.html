@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow | Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body data-page="dashboard" data-requires-auth="true">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">TF</div>
+        <div>
+          <h1>TaskFlow</h1>
+          <p>Dashboard de produtividade e visibilidade</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/" data-nav>Início</a>
+        <a href="/equipes.html" data-nav>Equipes</a>
+        <a href="/tarefas.html" data-nav>Tarefas</a>
+        <a href="/dashboard.html" data-nav>Dashboard</a>
+        <a href="/notificacoes.html" data-nav>Notificações</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Visão gerencial</span>
+      <h2>Resumo rápido do trabalho sem esconder o que importa.</h2>
+      <p>
+        O painel reúne descrição, status, prazo e visibilidade das tarefas para apoiar decisões operacionais.
+        É o ponto central para acompanhar fluxo, carga e risco de atraso.
+      </p>
+    </section>
+
+    <div class="content-grid">
+      <article class="panel span-8">
+        <h3>Pipeline de tarefas</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>To Do</strong>
+            <div>Itens prontos para iniciar, com dono, prazo e equipe já definidos.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Doing</strong>
+            <div>Trabalho em andamento com acompanhamento de responsáveis e alertas ativos.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Done</strong>
+            <div>Entrega concluída e registrada para consulta posterior.</div>
+          </div>
+        </div>
+      </article>
+      <article class="panel span-4">
+        <h3>Indicadores</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Visão</strong>
+            <div>Clara para líderes e membros.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Alertas</strong>
+            <div>Prazo e mudança relevantes.</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Risco</strong>
+            <div>Atraso destacado visualmente.</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

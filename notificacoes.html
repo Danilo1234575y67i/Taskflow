@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow | Notificações</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body data-page="notifications" data-requires-auth="true">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">TF</div>
+        <div>
+          <h1>TaskFlow</h1>
+          <p>Comunicação de eventos importantes</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/" data-nav>Início</a>
+        <a href="/equipes.html" data-nav>Equipes</a>
+        <a href="/tarefas.html" data-nav>Tarefas</a>
+        <a href="/dashboard.html" data-nav>Dashboard</a>
+        <a href="/notificacoes.html" data-nav>Notificações</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Mensagens e alertas</span>
+      <h2>Atualizações do sistema e mudanças de tarefa sempre visíveis.</h2>
+      <p>
+        Notificações são parte do valor do produto. Sem isso, mudanças passam despercebidas e o fluxo perde confiabilidade.
+      </p>
+    </section>
+
+    <div class="content-grid">
+      <article class="panel span-12">
+        <div class="section-title">
+          <h3>Adicionar notificação</h3>
+          <span>Admin e membro podem publicar uma nova mensagem</span>
+        </div>
+        <form id="notification-form" class="stack form-card">
+          <div class="field">
+            <label for="notification-title">Título</label>
+            <input id="notification-title" name="title" type="text" required placeholder="Ex.: Atualização de processo" />
+          </div>
+          <div class="field">
+            <label for="notification-message">Mensagem</label>
+            <textarea id="notification-message" name="message" rows="3" required placeholder="Escreva o conteúdo da notificação"></textarea>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="notification-category">Categoria</label>
+              <input id="notification-category" name="category" type="text" placeholder="Ex.: Sistema" />
+            </div>
+            <div class="field">
+              <label for="notification-priority">Prioridade</label>
+              <select id="notification-priority" name="priority">
+                <option value="Normal">Normal</option>
+                <option value="Alta">Alta</option>
+                <option value="Urgente">Urgente</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Adicionar notificação</button>
+          </div>
+        </form>
+        <div id="notification-message" class="message-line"></div>
+        <div id="notification-list" class="item-list"></div>
+      </article>
+
+      <article class="panel span-12">
+        <h3>Eventos monitorados</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Sistema</strong>
+            <div>
+              Avisos de manutenção, atualização de regras e mudanças de disponibilidade.
+              <div class="status"><span class="dot"></span>Obrigatório</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <strong>Tarefas</strong>
+            <div>
+              Mudança de responsável, alteração de prazo, avanço de status e conclusão.
+              <div class="status"><span class="dot warn"></span>Rastreado</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <strong>Atrasos</strong>
+            <div>
+              Quando o prazo estoura, o alerta fica explícito para acelerar a resposta.
+              <div class="status"><span class="dot danger"></span>Alta prioridade</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

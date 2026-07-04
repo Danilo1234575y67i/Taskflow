@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow | Login</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body data-page="login">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">TF</div>
+        <div>
+          <h1>TaskFlow</h1>
+          <p>Acesse seu painel com praticidade</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero hero--compact">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Bem-vindo</span>
+          <h2>Entre de forma simples e segura.</h2>
+          <p data-role-note>
+            Faça login para continuar. O TaskFlow foi pensado para organizar tarefas e facilitar o trabalho em equipe com clareza e objetividade.
+          </p>
+          <div class="quick-badges">
+            <span class="pill">Organização</span>
+            <span class="pill">Fluxo simples</span>
+            <span class="pill">Acesso rápido</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="login-grid">
+      <section class="auth-panel">
+        <div class="panel-heading">
+          <span class="eyebrow eyebrow--small">Login manual</span>
+          <h3>Entre com seus dados</h3>
+        </div>
+        <form id="login-form" class="stack">
+          <div class="field">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" name="email" type="email" required placeholder="admin@taskflow.local" autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="login-password">Senha</label>
+            <input id="login-password" name="password" type="password" required placeholder="123456" autocomplete="current-password" />
+          </div>
+          <div class="form-actions">
+            <button class="button primary" id="login-submit" type="submit">Entrar no painel</button>
+          </div>
+        </form>
+        <div id="login-message" class="message-line"></div>
+      </section>
+
+      <section class="feature-card feature-card--about">
+        <div class="panel-heading">
+          <span class="eyebrow eyebrow--small">Quem somos</span>
+          <h4>TaskFlow em uma visão simples</h4>
+        </div>
+        <p>
+          O TaskFlow é uma plataforma criada para ajudar equipes e pessoas a organizar tarefas, acompanhar atividades e manter o trabalho mais claro e produtivo no dia a dia.
+        </p>
+        <p>
+          Com uma interface direta e objetiva, o sistema facilita o controle das demandas, melhora a comunicação e torna o fluxo de trabalho mais organizado para todos os perfis de acesso.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Organização</span>
+          <span class="pill">Colaboração</span>
+          <span class="pill">Fluxo simples</span>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

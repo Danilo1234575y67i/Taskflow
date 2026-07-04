@@ -1,0 +1,12 @@
+{
+  "name": "taskflow-site",
+  "version": "1.0.0",
+  "description": "TaskFlow PRD website with Node.js pages and transitions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
