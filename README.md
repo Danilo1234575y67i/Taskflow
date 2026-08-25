@@ -1,94 +1,97 @@
-## 🚀 TaskFlow 
+# TaskFlow
 
-O TaskFlow é uma aplicação web criada para ajudar equipes que trabalham remotamente a organizarem suas tarefas de forma simples, clara e eficiente.
+> Aplicação web para organização de tarefas e acompanhamento da produtividade de equipes remotas.
 
-A ideia do projeto surgiu a partir de um problema comum em times distribuídos: a dificuldade de acompanhar o que precisa ser feito, quem é responsável por cada tarefa e qual é o prazo de entrega.
+## 📌 Sobre o projeto
 
-## 💡 Sobre o projeto
+O **TaskFlow** é um projeto acadêmico desenvolvido para aplicar conceitos de desenvolvimento web, organização de requisitos e gerenciamento de tarefas em equipes que trabalham remotamente.
 
-Em ambientes de trabalho remoto, é comum que tarefas se percam em meio a conversas, mensagens e ferramentas diferentes. Isso gera confusão, atrasos e falta de visibilidade do andamento das atividades.
+A proposta é centralizar tarefas, responsáveis, prazos e indicadores de acompanhamento em uma única aplicação, reduzindo a perda de informações entre diferentes canais de comunicação.
 
-O TaskFlow foi desenvolvido justamente para resolver esse problema, reunindo tudo em um único lugar.
+## ✨ Principais funcionalidades
 
-Com ele, é possível centralizar a organização do time e ter uma visão clara do que está acontecendo no projeto.
+- 🔐 Autenticação e fluxo de acesso
+- 👥 Organização de usuários por equipe
+- 🛡️ Perfis de Administrador e Membro
+- 📋 Criação e acompanhamento de tarefas
+- 👤 Definição de responsável
+- ⏰ Controle de prazos e identificação de tarefas atrasadas
+- 📊 Dashboard para acompanhamento da equipe
+- 🔔 Página de notificações
+- 🚪 Fluxo de logout
 
-## 🎯 Objetivo
+## 🧱 Estrutura atual
 
-O objetivo do TaskFlow é facilitar a organização de equipes, garantindo que:
+```text
+Taskflow/
+├── index.html
+├── login.html
+├── dashboard.html
+├── equipes.html
+├── tarefas.html
+├── notificacoes.html
+├── logout.html
+├── styles.css
+├── app.js
+├── server.js
+├── store.json
+└── package.json
+```
 
-cada tarefa tenha um responsável definido
-os prazos sejam respeitados e visíveis
-o progresso do time seja fácil de acompanhar
-as informações estejam sempre organizadas e acessíveis
-##🧱 Como funciona
+## 🛠️ Tecnologias
 
-O sistema é dividido em duas partes principais:
+- **HTML5** — estrutura das páginas
+- **CSS3** — layout e responsividade
+- **JavaScript** — interações e lógica da aplicação
+- **Node.js** — execução do servidor
+- **JSON** — armazenamento utilizado na versão atual
 
-O frontend, que é a parte visual onde o usuário interage com o sistema, como login, dashboard e gerenciamento de tarefas.
+> **Nota:** a documentação foi ajustada para refletir a estrutura atual do repositório, que utiliza HTML, CSS, JavaScript e Node.js.
 
-E o backend, que é responsável por toda a lógica da aplicação, como autenticação, regras de negócio e controle das tarefas.
+## 🚀 Como executar
 
-## 👥 Organização de usuários
+### Pré-requisitos
 
-Cada usuário dentro do sistema pertence a um time específico.
+- Node.js 18 ou superior
+- Git
 
-Além disso, existem dois tipos de perfis:
+### Instalação
 
-Admin, que tem permissão para gerenciar o time e as tarefas
-Membro, que executa e acompanha suas próprias tarefas
+```bash
+git clone https://github.com/Danilo1234575y67i/Taskflow.git
+cd Taskflow
+npm start
+```
 
-Essa estrutura garante mais organização e controle dentro da equipe.
+Depois, acesse no navegador o endereço informado pelo servidor.
 
-##📌 Como as tarefas funcionam
+## 🎓 Objetivos de aprendizagem
 
-As tarefas são o centro do sistema.
+Este projeto faz parte da minha formação em **Técnico em Informática para Internet** e foi utilizado para praticar:
 
-Cada tarefa possui informações essenciais como título, descrição, responsável e prazo de entrega.
+- desenvolvimento frontend;
+- desenvolvimento backend;
+- JavaScript e Node.js;
+- organização de requisitos;
+- arquitetura básica de aplicações web;
+- usabilidade e experiência do usuário;
+- documentação de software.
 
-O fluxo de trabalho segue três etapas simples:
+## 🔮 Próximas melhorias
 
-To Do, quando a tarefa ainda não foi iniciada
-Doing, quando está em andamento
-Done, quando foi finalizada
+- Migrar o armazenamento para banco de dados
+- Aprimorar autenticação e controle de sessão
+- Implementar histórico de alterações das tarefas
+- Adicionar testes automatizados
+- Evoluir o dashboard com indicadores de produtividade
+- Modularizar a arquitetura do projeto
 
-Esse modelo ajuda a manter o processo de trabalho organizado e fácil de entender.
+## 📈 Status
 
-##⏰ Prazos e acompanhamento
+🟡 **Em desenvolvimento — projeto acadêmico / MVP.**
 
-O controle de prazos é uma parte importante do sistema.
+## 👨‍💻 Autor
 
-Cada tarefa precisa obrigatoriamente ter uma data de entrega, e o sistema ajuda a acompanhar isso para evitar atrasos.
+**Danilo** — estudante de Técnico em Informática para Internet.
 
-Tarefas fora do prazo ficam visíveis de forma clara, facilitando o acompanhamento do time.
-
-📊 Dashboard
-
-O dashboard é a tela principal do sistema.
-
-Ele mostra um resumo geral das tarefas do time, permitindo entender rapidamente o que está pendente, o que está em andamento e o que já foi concluído.
-
-A ideia é oferecer uma visão simples e direta da produtividade da equipe.
-
-## 🔐 Segurança
-
-O TaskFlow também foi pensado para garantir segurança e isolamento de dados.
-
-Cada usuário acessa apenas as informações do seu próprio time, e todas as ações são protegidas por autenticação.
-
-Isso evita acessos indevidos e garante privacidade dentro da plataforma.
-
-##⚙️ Tecnologias utilizadas
-
-O projeto foi desenvolvido utilizando Node.js no backend e React no frontend, com foco em uma arquitetura simples e escalável.
-
-## 🚀 Status do projeto
-
-O TaskFlow está em fase inicial de desenvolvimento (MVP), mas já possui uma base funcional que pode ser expandida para uma aplicação completa de nível profissional.
-
-## 📌 Futuras melhorias
-
-Algumas melhorias planejadas incluem a criação de um sistema de kanban mais visual, notificações em tempo real, gráficos de produtividade e suporte para múltiplos times em escala maior.
-
-## 💬 Conclusão
-
-O TaskFlow foi criado como um projeto para demonstrar como a organização correta de tarefas pode melhorar significativamente o trabalho em equipe, especialmente em ambientes remotos.
+[GitHub](https://github.com/Danilo1234575y67i)
