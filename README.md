@@ -1,26 +1,32 @@
 # TaskFlow
 
-> Aplicação web para organização de tarefas e acompanhamento da produtividade de equipes remotas.
+> Plataforma web para gerenciamento de tarefas e acompanhamento da produtividade de equipes remotas.
 
-## 📌 Sobre o projeto
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 
-O **TaskFlow** é um projeto acadêmico desenvolvido para aplicar conceitos de desenvolvimento web, organização de requisitos e gerenciamento de tarefas em equipes que trabalham remotamente.
+## 📌 Visão geral
 
-A proposta é centralizar tarefas, responsáveis, prazos e indicadores de acompanhamento em uma única aplicação, reduzindo a perda de informações entre diferentes canais de comunicação.
+O **TaskFlow** é um projeto acadêmico desenvolvido para aplicar conceitos de desenvolvimento web, levantamento de requisitos e gerenciamento de tarefas em equipes que trabalham remotamente.
 
-## ✨ Principais funcionalidades
+A aplicação centraliza tarefas, responsáveis, prazos, notificações e indicadores em uma única interface.
+
+## ✨ Funcionalidades
 
 - 🔐 Autenticação e fluxo de acesso
 - 👥 Organização de usuários por equipe
 - 🛡️ Perfis de Administrador e Membro
 - 📋 Criação e acompanhamento de tarefas
-- 👤 Definição de responsável
-- ⏰ Controle de prazos e identificação de tarefas atrasadas
-- 📊 Dashboard para acompanhamento da equipe
-- 🔔 Página de notificações
-- 🚪 Fluxo de logout
+- 👤 Definição de responsáveis
+- ⏰ Controle de prazos e tarefas atrasadas
+- 📊 Dashboard de acompanhamento
+- 🔔 Notificações
+- 🚪 Logout e encerramento de sessão
 
-## 🧱 Estrutura atual
+## 🧱 Estrutura
 
 ```text
 Taskflow/
@@ -40,19 +46,19 @@ Taskflow/
 
 ## 🛠️ Tecnologias
 
-- **HTML5** — estrutura das páginas
-- **CSS3** — layout e responsividade
-- **JavaScript** — interações e lógica da aplicação
-- **Node.js** — execução do servidor
-- **JSON** — armazenamento utilizado na versão atual
+| Tecnologia | Uso |
+|---|---|
+| HTML5 | Estrutura das páginas |
+| CSS3 | Layout, responsividade e interface |
+| JavaScript | Interações e lógica |
+| Node.js | Backend e execução do servidor |
+| JSON | Persistência utilizada no MVP |
 
-> **Nota:** a documentação foi ajustada para refletir a estrutura atual do repositório, que utiliza HTML, CSS, JavaScript e Node.js.
-
-## 🚀 Como executar
+## 🚀 Executando localmente
 
 ### Pré-requisitos
 
-- Node.js 18 ou superior
+- [Node.js](https://nodejs.org/) 18+
 - Git
 
 ### Instalação
@@ -60,35 +66,35 @@ Taskflow/
 ```bash
 git clone https://github.com/Danilo1234575y67i/Taskflow.git
 cd Taskflow
+npm install
 npm start
 ```
 
-Depois, acesse no navegador o endereço informado pelo servidor.
+Abra no navegador o endereço informado pelo servidor.
 
-## 🎓 Objetivos de aprendizagem
+## 🎓 O que estou praticando
 
-Este projeto faz parte da minha formação em **Técnico em Informática para Internet** e foi utilizado para praticar:
+Este projeto faz parte da minha formação em **Técnico em Informática para Internet** e contribui para o desenvolvimento de competências em:
 
-- desenvolvimento frontend;
-- desenvolvimento backend;
+- desenvolvimento frontend e backend;
 - JavaScript e Node.js;
 - organização de requisitos;
-- arquitetura básica de aplicações web;
-- usabilidade e experiência do usuário;
-- documentação de software.
+- arquitetura de aplicações web;
+- UX e responsividade;
+- documentação e versionamento com Git.
 
-## 🔮 Próximas melhorias
+## 🔮 Roadmap
 
-- Migrar o armazenamento para banco de dados
-- Aprimorar autenticação e controle de sessão
-- Implementar histórico de alterações das tarefas
-- Adicionar testes automatizados
-- Evoluir o dashboard com indicadores de produtividade
-- Modularizar a arquitetura do projeto
+- [ ] Migrar a persistência para banco de dados
+- [ ] Aprimorar autenticação e controle de sessão
+- [ ] Implementar histórico de alterações
+- [ ] Adicionar testes automatizados
+- [ ] Evoluir os indicadores do dashboard
+- [ ] Modularizar a arquitetura
 
 ## 📈 Status
 
-🟡 **Em desenvolvimento — projeto acadêmico / MVP.**
+**Em desenvolvimento — MVP acadêmico.**
 
 ## 👨‍💻 Autor
 
